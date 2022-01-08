@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextLayout extends StatelessWidget {
   const TextLayout({ Key? key }) : super(key: key);
@@ -8,9 +9,9 @@ class TextLayout extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        const Text(
+        Text(
           'Hello, World!',
-          style: TextStyle(fontSize: 16),
+          style: GoogleFonts.nanumGothic(fontSize: 35),
         ),
         Text(
           'Text can wrap without issue',
@@ -37,7 +38,7 @@ class TextLayout extends StatelessWidget {
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                       decorationStyle: TextDecorationStyle.double,
-                      fontSize: 40,
+                      fontSize: 25,
                     ),
                   ),
                 ],
